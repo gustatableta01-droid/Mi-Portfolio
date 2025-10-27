@@ -71,7 +71,7 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
-        .work-item { <img src=familia cubierta.png}
+        .work-item {
             background: white;
             padding: 20px;
             border-radius: 8px;
@@ -156,18 +156,19 @@
     <!-- Sección Sobre Mí -->
     <section id="about" class="about">
         <h2>Sobre Mí</h2>
-        <p>Soy [Santiago Rolón], [diseñador gráfico]. Me apasiona [eLARTE]. Aquí encontrarás una selección de mis trabajos.</p>
+        <p>Soy Santiago Rolón, diseñador gráfico. Me apasiona el arte. Aquí encontrarás una selección de mis trabajos.</p>
     </section>
 
     <!-- Sección de Trabajos -->
     <section id="works" class="works">
         <h2>Mis Trabajos</h2>
-        <img src="familia-cubierta.png" alt="Flyer de celso">
-        <div class="work-item" onclick="openModal(familia-cubierta.png, 'Proyecto 1', 'Descripción detallada del trabajo.')">
+        <!-- Proyecto 1: La imagen está dentro del div para que se vea aquí -->
+        <div class="work-item" onclick="openModal('familia-cubierta.png', 'Proyecto 1', 'Descripción detallada del trabajo.')">
             <img src="familia-cubierta.png" alt="Flyer de celso">
             <h3>Proyecto 1</h3>
             <p>Haz clic para ver más.</p>
         </div>
+        <!-- Proyecto 2 -->
         <div class="work-item" onclick="openModal('https://via.placeholder.com/600x400', 'Proyecto 2', 'Otra descripción.')">
             <img src="familia-cubierta.png" alt="Trabajo 2">
             <h3>Proyecto 2</h3>
@@ -179,14 +180,14 @@
     <!-- Modal para galería -->
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
-        <img class="familia cubierta.png" id="modalImg">
+        <img id="modalImg" class="modal-content">
         <div id="modalCaption"></div>
     </div>
 
     <!-- Pie de página -->
     <footer id="contact">
-        <p>Contacto: <a href="santiagorolonn01@gmail.com">tuemail@example.com</a> | Tel: [3764-737347]</p>
-        <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:santiagorolonn01@gmail.com">santiagorolonn01@gmail.com</a> | Tel: 3764-737347</p>
+        <p>&copy; 2023 Santiago Rolón. Todos los derechos reservados.</p>
     </footer>
 
     <!-- JavaScript para interactividad -->
